@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = +prompt("Nhập số nguyên tố cần in")
+    let count = 0;
+    let flag ;
+    for (let i = 1; ; i++) {
+        flag = 0;
+        for (let j = 1; j <= i; j++) {
+            if (i % j === 0) {
+                flag++;
+            }
+        }
+        if (flag === 2) {
+            document.write(i + '<br>');
+            count++;
+        }
+        if (count === input) break;
+    }
+</script>
+</body>
+</html>
